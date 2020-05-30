@@ -3,7 +3,6 @@ package com.test.situ.cap6.config;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.junit.Assert.*;
 
 /**
  * @Classname Cap6ConfigTest
@@ -20,6 +19,9 @@ public class Cap6ConfigTest {
         AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Cap6Config.class);
         System.out.println("IOC容器创建。。。。。");
         String[] names = app.getBeanDefinitionNames();
+
+        Object bean1 = app.getBean("com.test.situ.cap6.config.ALiangFactory");
+        System.out.println("bean的类型"  + bean1.getClass());
 
         for (String name  : names   ) {
             System.out.println(name);

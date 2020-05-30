@@ -14,7 +14,8 @@ import org.springframework.context.annotation.Import;
  * @Created by heyca
  */
 @Configuration
-@Import(value = {Dog.class, Cat.class, JohnImportSelector.class, ALiangImportBeanDefinitionRegistrar.class})
+@Import(value = {Dog.class, Cat.class, JohnImportSelector.class, ALiangImportBeanDefinitionRegistrar.class,
+        ALiangFactory.class})
 public class Cap6Config {
 
     /**
@@ -34,9 +35,9 @@ public class Cap6Config {
         return new Person("John", 20);
     }
 
-    @Bean
-    public ALiangFactory aLiangFactory(){
-        return new  ALiangFactory();
-    }
+    //@Bean
+    //public ALiangFactory aLiangFactory(){
+     //   return new  ALiangFactory();
+    //}
 
 }
