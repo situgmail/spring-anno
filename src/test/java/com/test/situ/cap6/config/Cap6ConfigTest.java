@@ -18,6 +18,7 @@ public class Cap6ConfigTest {
 
         AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Cap6Config.class);
         System.out.println("IOC容器创建。。。。。");
+
         String[] names = app.getBeanDefinitionNames();
 
         Object bean1 = app.getBean("com.test.situ.cap6.config.ALiangFactory");
