@@ -4,8 +4,6 @@ import com.test.situ.cap10.aop.Calculator;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.junit.Assert.*;
-
 /**
  * @Classname Cap10ConfigTest
  * @Description TODO
@@ -19,7 +17,7 @@ public class Cap10ConfigTest {
     public void doTest(){
         AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Cap10Config.class);
         Calculator calculator = app.getBean(Calculator.class);
-        calculator.div(10, 0);
+        calculator.div(10, 1);
         app.close();
     }
 
