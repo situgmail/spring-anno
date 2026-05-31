@@ -2,7 +2,7 @@ package com.test.situ.cap1.config;
 
 import com.test.situ.cap1.Person;
 import com.test.situ.cap2.config.Cap2Config;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class MyCap2Test {
 
-    @Test()
+    @Test
     public void Test01(){
         AnnotationConfigApplicationContext app
                 = new AnnotationConfigApplicationContext(Cap2Config.class);

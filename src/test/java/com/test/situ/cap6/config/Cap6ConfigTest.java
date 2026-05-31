@@ -1,6 +1,6 @@
 package com.test.situ.cap6.config;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 

@@ -1,9 +1,8 @@
 package com.test.situ.cap5.config;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.junit.Assert.*;
 
 /**
  * @Classname Cap5ConfigTest

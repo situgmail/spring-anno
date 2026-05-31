@@ -3,7 +3,7 @@ package com.test.situ.cap9.config;
 import com.test.situ.cap9.bean.Moon;
 import com.test.situ.cap9.bean.Sun;
 import com.test.situ.cap9.service.TestService;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

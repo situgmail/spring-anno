@@ -1,7 +1,7 @@
 package com.test.situ.cap10.config;
 
 import com.test.situ.cap10.aop.Calculator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
