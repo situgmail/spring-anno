@@ -14,12 +14,10 @@ public class AiChatService {
     private static final int SESSION_MESSAGE_LIMIT = 200;
 
     private final ChatClient chatClient;
-    private final ChatMemory chatMemory;
     private final ChatSessionService sessionService;
 
-    public AiChatService(ChatClient chatClient, ChatMemory chatMemory, ChatSessionService sessionService) {
+    public AiChatService(ChatClient chatClient, ChatSessionService sessionService) {
         this.chatClient = chatClient;
-        this.chatMemory = chatMemory;
         this.sessionService = sessionService;
     }
 
